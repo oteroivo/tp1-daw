@@ -28,6 +28,11 @@
     position: absolute;
     left: 0;
     margin-left: 50px;
+    display: none;
+
+    @media (max-width: 1024px) {
+        display: block;
+    }
 }
 
 .navbar {
@@ -38,6 +43,10 @@
     background-color: #000a2f;
     color: white;
     height: 2rem;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }
 
 .img-side {
@@ -58,6 +67,14 @@
     align-items: center;
     margin: 50px;
     gap: 50px;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 55% 1fr;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .footer {
@@ -84,6 +101,14 @@
 .logo-footer {
     width: 200px;
     height: 100%;
+}
+
+.logo-header {
+    width: 300px;
+
+    @media (max-width: 768px) {
+        width: 200px;
+    }
 }
 
 .text-date {
